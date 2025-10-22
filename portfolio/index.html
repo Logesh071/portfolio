@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal Portfolio — Responsive CSS3 Design (with GSAP)</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assest/favicon.png" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-content bg-light">
+      <!-- Navbar -->
+      <nav id="topNav" class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#home"
+            >Logesh B<span class="text-muted">.</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+          >
+            <span><i class="fa-solid fa-bars text-white"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <a class="btn btn-primary ms-lg-3" href="#contact">Hire Me</a>
+          </div>
+        </div>
+      </nav>
+      <!-- HERO / HOME -->
+      <header id="home" class="hero">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <div class="intro gs-hero-left">
+                <span class="d-inline-flex align-items-center mb-2">
+                  <span class="accent-dot"></span>
+                  <small class="text-muted"
+                    >Full-stack Developer & Designer</small
+                  >
+                </span>
+                <h1 class="gs-hero-title mb-5">
+                  Hi, I’m Logesh — a Full-Stack Developer passionate about
+                  crafting clean, modern, and engaging web solutions.
+                </h1>
+
+                <p class="lead gs-hero-lead">
+                  I craft pixel-perfect responsive websites and web apps with
+                  emphasis on performance, accessibility, and delightful
+                  micro-interactions. I love turning complex problems into
+                  simple, beautiful interfaces.
+                </p>
+                <div class="d-flex gap-2 gs-hero-cta">
+                  <a class="btn btn-primary btn-lg" href="#portfolio"
+                    >View Work</a
+                  >
+                  <a class="btn btn-outline-secondary btn-lg" href="#about"
+                    >About Me</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div
+                class="card gs-hero-card"
+                style="border-radius: 14px; padding: 1.25rem"
+              >
+                <img
+                  src="/assest/download.jpg"
+                  alt="hero"
+                  style="
+                    width: 100%;
+                    height: 320px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                  "
+                />
+                <div style="padding: 0.9rem">
+                  <h5 style="margin-bottom: 0.2rem">Hi, I'm Logesh 👋</h5>
+                  <p class="text-muted mb-0">
+                    I create modern, responsive websites that combine sleek
+                    design with seamless functionality. From landing pages to
+                    full-scale web applications, I ensure your site is fast,
+                    engaging, and optimized for real user impact.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ABOUT -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="row gy-4 align-items-center">
+            <div class="col-lg-5 gs-about-left">
+              <h2>About Me</h2>
+              <p class="text-muted mb-4 ">
+                I have 1 year of experience creating user-focused digital
+                products — from engaging marketing websites to interactive web
+                applications. I specialize in UI/UX design, responsive CSS3,
+                performance optimization, and building accessible web
+                experiences.
+              </p>
+
+              <ul class="list-unstyled">
+                <li><strong>Location:</strong> India</li>
+                <li>
+                  <strong>Availability:</strong> Open for freelance & full-time
+                </li>
+                <li>
+                  <strong>Email:</strong>
+                  <a href="mailto:hello@example.com">hello@example.com</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-7 gs-about-right">
+              <h5 class="mb-3">Key Skills</h5>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                      <small>HTML & CSS</small><small>95%</small>
+                    </div>
+                    <div class="progress" data-progress="95">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 0%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                      <small>JavaScript (ES6+)</small><small>88%</small>
+                    </div>
+                    <div class="progress" data-progress="88">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 0%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                      <small>React / Vue</small><small>82%</small>
+                    </div>
+                    <div class="progress" data-progress="82">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 0%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                      <small>UI/UX & Prototyping</small><small>90%</small>
+                    </div>
+                    <div class="progress" data-progress="90">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 0%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-3">
+                  <p class="text-muted small">
+                    I enjoy mentoring junior developers, contributing to
+                    open-source, and exploring design systems. When not coding
+                    I’m likely sketching UI ideas or playing with new CSS
+                    features.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="py-5">
+        <div class="container">
+          <div class="row mb-4 align-items-end">
+            <div class="col-md-8 gs-services-header">
+              <h3>Services</h3>
+              <p class="text-muted">
+                I offer end-to-end web development services — from design and
+                prototyping to production-ready code and performance tuning.
+              </p>
+            </div>
+          </div>
+
+          <div class="row g-4 gs-services-grid">
+            <div class="col-md-6 col-lg-4 gs-service">
+              <div class="service-card h-100">
+                <div class="d-flex align-items-start gap-3 mb-3">
+                  <div
+                    class="p-2 rounded-3"
+                    style="background: rgba(0, 123, 255, 0.06)"
+                  >
+                    <i
+                      class="fa-solid fa-pencil fa-lg"
+                      style="color: var(--accent)"
+                    ></i>
+                  </div>
+                  <div>
+                    <h5>UI/UX Design</h5>
+                    <p class="small text-muted mb-0">
+                      User-centred design, wireframes, and pixel-perfect UI with
+                      a focus on accessibility and conversions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 gs-service">
+              <div class="service-card h-100">
+                <div class="d-flex align-items-start gap-3 mb-3">
+                  <div
+                    class="p-2 rounded-3"
+                    style="background: rgba(29, 161, 242, 0.06)"
+                  >
+                    <i
+                      class="fa-solid fa-code fa-lg"
+                      style="color: #1da1f2"
+                    ></i>
+                  </div>
+                  <div>
+                    <h5>Frontend Development</h5>
+                    <p class="small text-muted mb-0">
+                      Responsive HTML5, modern CSS3 (Flexbox/Grid), and modular
+                      JS for maintainable frontends.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 gs-service">
+              <div class="service-card h-100">
+                <div class="d-flex align-items-start gap-3 mb-3">
+                  <div
+                    class="p-2 rounded-3"
+                    style="background: rgba(16, 185, 129, 0.06)"
+                  >
+                    <i
+                      class="fa-solid fa-server fa-lg"
+                      style="color: #10b981"
+                    ></i>
+                  </div>
+                  <div>
+                    <h5>Backend & APIs</h5>
+                    <p class="small text-muted mb-0">
+                      Node.js, Express, RESTful APIs, database design and
+                      performant server-side architecture.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 gs-service">
+              <div class="service-card h-100">
+                <div class="d-flex align-items-start gap-3 mb-3">
+                  <div
+                    class="p-2 rounded-3"
+                    style="background: rgba(234, 88, 12, 0.06)"
+                  >
+                    <i
+                      class="fa-solid fa-mobile-screen-button fa-lg"
+                      style="color: #ea580c"
+                    ></i>
+                  </div>
+                  <div>
+                    <h5>Responsive & Mobile</h5>
+                    <p class="small text-muted mb-0">
+                      Mobile-first development with optimized touch controls,
+                      menus and accessible navigation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 gs-service">
+              <div class="service-card h-100">
+                <div class="d-flex align-items-start gap-3 mb-3">
+                  <div
+                    class="p-2 rounded-3"
+                    style="background: rgba(99, 102, 241, 0.06)"
+                  >
+                    <i
+                      class="fa-solid fa-bolt fa-lg"
+                      style="color: #6366f1"
+                    ></i>
+                  </div>
+                  <div>
+                    <h5>Performance</h5>
+                    <p class="small text-muted mb-0">
+                      Audits, code-splitting, lazy loading and best practices to
+                      improve Core Web Vitals.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 gs-service">
+              <div class="service-card h-100">
+                <div class="d-flex align-items-start gap-3 mb-3">
+                  <div
+                    class="p-2 rounded-3"
+                    style="background: rgba(244, 63, 94, 0.06)"
+                  >
+                    <i
+                      class="fa-solid fa-shield-halved fa-lg"
+                      style="color: #f43f5e"
+                    ></i>
+                  </div>
+                  <div>
+                    <h5>Security & Testing</h5>
+                    <p class="small text-muted mb-0">
+                      Basic security hardening, input validation and
+                      unit/integration test practices.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section id="portfolio" class="py-5 bg-white">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-md-8 gs-portfolio-header">
+              <h3>Selected Projects</h3>
+              <p class="text-muted">
+                Some recent work — a mix of landing pages, web apps and
+                component libraries.
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio-grid gs-portfolio-grid">
+            <!-- Card 1 -->
+            <div
+              class="portfolio-item card"
+              tabindex="0"
+              data-title="E-Commerce UI"
+              data-desc="A modern, performant e-commerce landing built with React and optimized images."
+              data-img="/assest/ecom.jpg"
+            >
+              <img loading="lazy" src="/assest/ecom.jpg" alt="E-commerce" />
+              <div class="portfolio-overlay">
+                <div class="text-center">
+                  <h5 class="mb-1">E-Commerce UI</h5>
+                  <small>React • Performance</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="portfolio-item card"
+              tabindex="0"
+              data-title="Analytics Dashboard"
+              data-desc="A dashboard with charts and real-time data updates."
+              data-img="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1400&auto=format&fit=crop"
+            >
+              <img
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1400&auto=format&fit=crop"
+                alt="Dashboard"
+              />
+              <div class="portfolio-overlay">
+                <div class="text-center">
+                  <h5 class="mb-1">Analytics Dashboard</h5>
+                  <small>Vue • Charts</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="portfolio-item card"
+              tabindex="0"
+              data-title="Marketing Landing"
+              data-desc="Conversion-focused landing page with A/B tested components."
+              data-img="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop"
+            >
+              <img
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop"
+                alt="Marketing"
+              />
+              <div class="portfolio-overlay">
+                <div class="text-center">
+                  <h5 class="mb-1">Marketing Landing</h5>
+                  <small>HTML • CSS3</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="portfolio-item card"
+              tabindex="0"
+              data-title="Component Library"
+              data-desc="Design system and reusable components with documentation."
+              data-img="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1400&auto=format&fit=crop"
+            >
+              <img
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1400&auto=format&fit=crop"
+                alt="Components"
+              />
+              <div class="portfolio-overlay">
+                <div class="text-center">
+                  <h5 class="mb-1">Component Library</h5>
+                  <small>Design Systems</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio modal -->
+          <div
+            class="modal fade"
+            id="portfolioModal"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body p-0">
+                  <button
+                    type="button"
+                    class="btn-close float-end m-3"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                  <img
+                    id="portfolioModalImg"
+                    src=""
+                    alt=""
+                    style="
+                      width: 100%;
+                      height: 420px;
+                      object-fit: cover;
+                      display: block;
+                    "
+                  />
+                  <div class="p-4">
+                    <h5 id="portfolioModalTitle"></h5>
+                    <p id="portfolioModalDesc" class="text-muted"></p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-5 gs-contact-left">
+              <h3>Contact Me</h3>
+              <p class="text-muted">
+                Have a project in mind or want to say hi? Fill the form and I'll
+                get back ASAP.
+              </p>
+
+              <div class="mt-3">
+                <p><strong>Phone:</strong> +91 9715921394</p>
+                <p><strong>Email:</strong> hello@example.com</p>
+                <p><strong>Location:</strong> Tamil Nadu, India</p>
+              </div>
+            </div>
+
+            <div class="col-lg-7 gs-contact-right">
+              <div class="card" style="border-radius: 14px; padding: 1.25rem">
+                <form id="contactForm" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="name" class="form-label">Full name *</label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        class="form-control"
+                        required
+                        minlength="3"
+                        placeholder="Your full name"
+                      />
+                      <div
+                        id="err-name"
+                        class="form-error"
+                        aria-live="polite"
+                      ></div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">Email *</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-control"
+                        required
+                        placeholder="you@example.com"
+                      />
+                      <div
+                        id="err-email"
+                        class="form-error"
+                        aria-live="polite"
+                      ></div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="password" class="form-label"
+                        >Password *</label
+                      >
+                      <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="form-control"
+                        required
+                        minlength="8"
+                        placeholder="Min 8 chars, 1 number, 1 letter"
+                      />
+                      <div
+                        id="err-password"
+                        class="form-error"
+                        aria-live="polite"
+                      ></div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label d-block">Gender *</label>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="g-male"
+                          value="male"
+                        />
+                        <label class="form-check-label" for="g-male"
+                          >Male</label
+                        >
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="g-female"
+                          value="female"
+                        />
+                        <label class="form-check-label" for="g-female"
+                          >Female</label
+                        >
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="g-other"
+                          value="other"
+                        />
+                        <label class="form-check-label" for="g-other"
+                          >Other</label
+                        >
+                      </div>
+                      <div
+                        id="err-gender"
+                        class="form-error"
+                        aria-live="polite"
+                      ></div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        class="form-control"
+                        placeholder="Tell me about your project..."
+                      ></textarea>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-end">
+                      <button type="submit" class="btn btn-primary">
+                        Send Message
+                      </button>
+                    </div>
+
+                    <div class="col-12">
+                      <div
+                        id="form-success"
+                        role="status"
+                        aria-live="polite"
+                        class="text-success small"
+                      ></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="mt-1 bg-black text-white py-2 text-center">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <div>© <span id="year"></span> Logesh B. All rights reserved.</div>
+          <div>
+            <a href="#" class="me-3 text-white"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="#" class="me-3 text-white"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="#" class="text-white"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
